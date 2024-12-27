@@ -7,4 +7,4 @@ cd /home/ec2-user/indian-liver-patients
 sudo yum install python3 -y
 yum install python3-pip -y
 pip3 install -r requirements.txt
-python3 app.py
+screen -m -d python3 ./app.py

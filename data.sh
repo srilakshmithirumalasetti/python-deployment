@@ -1,10 +1,10 @@
 #!/bin/bash
-sudo apt upgrade -y
-sudo apt install git -y
-git clone https://github.com/srilakshmithirumalasetti/Medical-Insurance.git
-sudo mv Medical-Insurance/ /home/ubuntu/
-cd /home/ubuntu/Medical-Insurance
-sudo apt install python3 -y
-apt install python3-pip -y
+sudo yum update -y
+sudo yum install git -y
+git clone https://github.com/srilakshmithirumalasetti/indian-liver-patients.git
+sudo mv indian-liver-patients/ /home/ec2-user/
+cd /home/ec2-user/indian-liver-patients
+sudo yum install python3 -y
+yum install python3-pip -y
 pip3 install -r requirements.txt
-nohup python3 -u ./app.py &
+python3 app.py
